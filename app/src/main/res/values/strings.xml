@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">InstantDiet</string>
+    <string name="registration">Registration</string>
+    <string name="continue_">Continue</string>
+    <string name="terms_service">Terms of Service</string>
 </resources>
