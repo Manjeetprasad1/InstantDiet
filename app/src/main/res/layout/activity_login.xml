@@ -1,145 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
-    <ImageView
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manny.instantdiet.viewModel.LoginViewModel" />
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/login_img"
-        android:scaleType="fitXY"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+      >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-
-        <View
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="32dp"
+            android:layout_height="400dp"
+            android:src="@drawable/login_img"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@color/grey_500"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registration"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular"
+                android:background="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:background="@color/grey_500"/>
+            android:background="@drawable/bg_edittext_thin_curv_boarder">
 
+            <TextView
+                android:id="@+id/tv_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:textSize="16sp"
+                android:textColor="@color/black_text_color"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingVertical="16dp"
+                android:layout_marginStart="16dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_country_code"
+                android:background="@color/white"
+                android:hint="9999999999"
+                android:layout_marginEnd="16dp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_continue"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/registration"
-            android:layout_marginTop="16dp"
-            android:layout_centerHorizontal="true"
-            android:padding="8dp"
-            android:textSize="14sp"
-            android:fontFamily="@font/roboto_regular"
-            android:background="@color/white"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/bg_edittext_thin_curv_boarder">
-
-        <TextView
-            android:id="@+id/tv_country_code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+91"
-            android:textSize="16sp"
-            android:textColor="@color/black_text_color"
+            android:text="@string/continue_"
+            android:gravity="center"
+            android:background="@drawable/bg_buttun"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/roboto_medium"
-            android:paddingVertical="16dp"
-            android:layout_marginStart="16dp"/>
+            android:paddingVertical="14dp"
+            android:textSize="20sp"/>
 
-        <EditText
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/tv_country_code"
-            android:background="@color/white"
-            android:hint="9999999999"
-            android:layout_marginEnd="16dp"
-            android:maxLength="10"
-            android:inputType="number"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="8dp"
-            android:textColor="@color/black_text_color"
-            android:textSize="16sp"/>
-
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/continue_"
-        android:gravity="center"
-        android:background="@drawable/bg_buttun"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="24dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/roboto_medium"
-        android:paddingVertical="14dp"
-        android:textSize="20sp"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_height="wrap_content">
 
 
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:background="@color/grey_500"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@color/grey_500"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular"
+                android:background="@color/white"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/logos_google_icon"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_circular_boarder"
+            android:layout_marginTop="16dp"/>
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="or"
-            android:layout_marginTop="16dp"
+            android:text="@string/terms_service"
             android:layout_centerHorizontal="true"
             android:padding="8dp"
-            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black_text_color"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"
             android:fontFamily="@font/roboto_regular"
             android:background="@color/white"/>
-    </RelativeLayout>
-    
-    
-    <ImageView
-        android:layout_width="52dp"
-        android:layout_height="52dp"
-        android:src="@drawable/logos_google_icon"
-        android:layout_gravity="center_horizontal"
-        android:padding="12dp"
-        android:background="@drawable/bg_circular_boarder"
-        android:layout_marginTop="16dp"/>
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/terms_service"
-        android:layout_centerHorizontal="true"
-        android:padding="8dp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/black_text_color"
-        android:layout_gravity="center_horizontal"
-        android:textSize="12sp"
-        android:fontFamily="@font/roboto_regular"
-        android:background="@color/white"/>
-
-</LinearLayout>
+    </LinearLayout>
+</layout>

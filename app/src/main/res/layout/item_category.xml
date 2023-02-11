@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="itemViewModel"
+            type="com.manny.instantdiet.itemViewModel.CategoryItemViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="55dp"
+        android:background="@drawable/bg_category"
+        android:layout_marginStart="16dp"
+        android:layout_height="78dp">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_cat_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_circular_white"
+            android:src="@drawable/location_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="6dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/all"
+            android:text="@{itemViewModel.categoryEntity.catName}"
+            app:layout_constraintTop_toBottomOf="@+id/iv_cat_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="4dp"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

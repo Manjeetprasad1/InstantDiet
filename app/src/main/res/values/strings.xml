@@ -3,4 +3,12 @@
     <string name="registration">Registration</string>
     <string name="continue_">Continue</string>
     <string name="terms_service">Terms of Service</string>
+    <string name="example_address">Wembley, London</string>
+    <string name="discover">Discover</string>
+    <string name="all">All</string>
+    <string name="bestseller">Bestseller</string>
+    <string name="food_name_example">Swagger Veg shalad</string>
+    <string name="food_desc_example">Protein+Nitration+Carbon+Sugar+Vitamin+fat</string>
+    <string name="food_price_example">$90</string>
+    <string name="add">Add +</string>
 </resources>
