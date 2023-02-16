@@ -21,9 +21,8 @@ class LoginActivity : BaseActivity() {
 
 
         binding.tvContinue.setOnClickListener {
-            val intent = Intent(this@LoginActivity,DashboardActivity::class.java)
+            val intent = Intent(this@LoginActivity,OtpActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

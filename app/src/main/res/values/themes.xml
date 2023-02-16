@@ -11,9 +11,18 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <item name="statusBarBackground" >@color/white</item>
+        <item name="statusBarBackground">@color/white</item>
         <item name="colorControlNormal">@color/grey_500</item>
         <item name="colorControlActivated">@color/brand_color</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.InstantDiet.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.InstantDiet.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.InstantDiet.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
