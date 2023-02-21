@@ -37,14 +37,28 @@
         <item name="android:textColor">@color/black_text_color</item>
     </style>
 
+
+
     <style name="text_roboto_normal_16_398D52">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textColor">#398D52</item>
     </style>
 
+    <style name="text_roboto_normal_16_6A6A6A">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">#6A6A6A</item>
+    </style>
+
     <style name="text_roboto_normal_16_white">
         <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_roboto_normal_12_white">
+        <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textColor">@color/white</item>
     </style>
@@ -59,6 +73,24 @@
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textColor">@color/black_text_color</item>
+    </style>
+
+    <style name="text_roboto_normal_16_828282">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">#828282</item>
+    </style>
+
+    <style name="text_roboto_normal_16_80BA43">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">#80BA43</item>
+    </style>
+
+    <style name="text_roboto_normal_16_0157D9">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">#0157D9</item>
     </style>
 
     <style name="text_roboto_normal_12">
