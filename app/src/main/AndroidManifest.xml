@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InstantDiet"
         tools:targetApi="31">
+        <activity android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
         <activity android:name=".activity.DashboardActivity"
             android:screenOrientation="portrait"
             android:exported="false"/>
