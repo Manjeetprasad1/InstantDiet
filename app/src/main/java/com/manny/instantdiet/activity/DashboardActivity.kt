@@ -15,11 +15,13 @@ import com.manny.instantdiet.viewModel.DashboardViewModel
 
 class DashboardActivity : BaseActivity() {
     private lateinit var binding: ActivityDashboardBinding
+
     private lateinit var linearLayout: LinearLayoutManager
     private lateinit var linearLayout2: LinearLayoutManager
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_dashboard)
+
         binding.viewModel = DashboardViewModel()
         binding.viewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
 
@@ -52,5 +54,8 @@ class DashboardActivity : BaseActivity() {
                 }
             }
         })
+    }
+    private fun container(){
+
     }
 }
