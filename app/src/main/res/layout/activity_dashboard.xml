@@ -7,95 +7,9 @@
             type="com.manny.instantdiet.viewModel.DashboardViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"/>
 
-            <TextView
-                android:id="@+id/tv_location"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/example_address"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/black_text_color"
-                android:textSize="12sp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"/>
-            
-            <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
-                android:src="@drawable/location_icon"
-                android:layout_toEndOf="@+id/tv_location"
-                android:layout_marginTop="18dp"
-                android:layout_marginStart="8dp"/>
-
-            <TextView
-                android:id="@+id/tv_discover"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/discover"
-                android:fontFamily="@font/roboto_bold"
-                android:textColor="@color/black_text_color"
-                android:textSize="36sp"
-                android:layout_marginTop="-8dp"
-                android:layout_below="@+id/tv_location"
-                android:layout_marginStart="16dp"/>
-
-
-        </RelativeLayout>
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/iv_profile_img"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:src="@drawable/location_icon"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="24dp"
-            app:civ_border_width="2dp"
-            app:civ_border_color="@color/brand_color"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_category"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/iv_profile_img">
-
-        </androidx.recyclerview.widget.RecyclerView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/banner_1"
-            android:layout_width="match_parent"
-            android:layout_height="178dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/rv_category">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </ImageView>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_food_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/banner_1">
-        </androidx.recyclerview.widget.RecyclerView>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

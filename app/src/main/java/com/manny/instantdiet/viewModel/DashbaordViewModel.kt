@@ -11,6 +11,7 @@ import com.manny.instantdiet.itemViewModel.ProductItemViewModel
 class DashboardViewModel : BaseViewModel(),CategoryItemViewModel.CategoryItemListener,ProductItemViewModel.ProductItemListener{
     val categoryEntityLiveData  = MutableLiveData<ArrayList<ItemProvider>>()
     val productEntityLiveData = MutableLiveData<ArrayList<ItemProvider>>()
+    val onItemClick = MutableLiveData<Boolean>(false)
 
     init {
         callApi()
@@ -58,6 +59,6 @@ class DashboardViewModel : BaseViewModel(),CategoryItemViewModel.CategoryItemLis
     }
 
     override fun onClick(itemViewModel: ProductItemViewModel) {
-
+        onItemClick.value = true
     }
 }

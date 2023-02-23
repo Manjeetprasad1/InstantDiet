@@ -19,9 +19,8 @@
         <activity android:name=".activity.DashboardActivity"
             android:screenOrientation="portrait"
             android:exported="false"/>
-        <activity android:name=".activity.LoginActivity"
         <activity
-            android:name=".activity.CheckoutActivity"
+            android:name=".fragment.CheckOutFragment"
             android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
@@ -33,15 +32,11 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ItemDetailActivity"
+            android:name=".fragment.ProductDetailFragment"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.OtpActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.DashboardActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

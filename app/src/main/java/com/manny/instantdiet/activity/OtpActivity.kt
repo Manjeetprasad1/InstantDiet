@@ -21,7 +21,7 @@ class OtpActivity : BaseActivity() {
         setContentView(binding.root)
 
         binding.buttonContinue.setOnClickListener {
-            val intent = Intent(this@OtpActivity,ItemDetailActivity::class.java)
+            val intent = Intent(this@OtpActivity,DashboardActivity::class.java)
             startActivity(intent)
         }
 
