@@ -68,7 +68,5 @@ class DashboardActivity : BaseActivity() {
             }
         })
     }
-    private fun container(){
 
-    }
 }
