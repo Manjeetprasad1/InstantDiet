@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
     <data>
         <variable
             name="viewModel"
@@ -22,15 +21,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="41dp"
                 android:layout_marginStart="18dp"
+                android:id="@+id/profile_top"
                 android:layout_marginEnd="14dp"
                 >
-                <com.google.android.material.card.MaterialCardView
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:cardCornerRadius="10dp"
+                   android:background="@drawable/rectangle_42"
                     android:id="@+id/profile_card"
 
                     >
@@ -94,6 +94,7 @@
                                 android:drawablePadding="4dp"
                                 android:text="View Activity"
                                 android:textAlignment="center"
+                                android:layout_gravity="center_vertical"
                                 android:textColor="#E11414"
                                 android:textSize="12sp"
                                 app:drawableEndCompat="@drawable/polygon_4" />
@@ -105,23 +106,35 @@
 
 
 
-                </com.google.android.material.card.MaterialCardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_card"
+
+                    android:paddingVertical="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/lps_lyt"
+                    >
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/profile_card"
+                    app:layout_constraintTop_toTopOf="parent"
                     android:weightSum="3"
+                    android:paddingVertical="4dp"
                     android:orientation="horizontal"
                     android:id="@+id/like_pay_setting">
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_marginBottom="4dp"
                         app:drawableTopCompat="@drawable/group_67"
                         android:layout_marginTop="8dp"
-                        android:padding="10dp"
-
+                        android:paddingVertical="10dp"
                         android:layout_marginHorizontal="4dp"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/rectangle_43"
@@ -133,6 +146,8 @@
                         app:drawableTopCompat="@drawable/group_68"
                         android:layout_marginTop="8dp"
                         android:padding="10dp"
+
+                        android:layout_marginBottom="4dp"
                         android:layout_marginHorizontal="4dp"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/rectangle_43"
@@ -145,6 +160,8 @@
                         android:layout_marginTop="8dp"
                         android:padding="10dp"
 
+                        android:layout_marginBottom="4dp"
+
                         android:layout_marginHorizontal="4dp"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/rectangle_43"
@@ -152,7 +169,71 @@
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating_lyt"
+                    app:layout_constraintTop_toBottomOf="@id/lps_lyt"
+                    android:background="@drawable/rectangle_42"
+                    android:layout_marginTop="26dp"
+                    android:paddingVertical="8dp"
+                    android:layout_marginHorizontal="4dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        >
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:src="@drawable/star_6"
+                            android:layout_marginStart="16dp"
+                            />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Rating"
+                            android:textColor="@color/black"
+                            android:layout_weight="1.9"
+                            android:paddingHorizontal="10dp"
+                            android:layout_marginStart="16dp"
+                            android:textSize="16sp"
+                            />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arrow_3"
+                            android:layout_weight="0.8"
+                            android:layout_marginStart="32dp"
+
+                            android:layout_gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/rating_lyt"
+                    android:layout_marginTop="24dp"
+
+                    >
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
         </ScrollView>
