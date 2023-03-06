@@ -11,4 +11,5 @@
     <string name="food_desc_example">Protein+Nitration+Carbon+Sugar+Vitamin+fat</string>
     <string name="food_price_example">$90</string>
     <string name="add">Add +</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
