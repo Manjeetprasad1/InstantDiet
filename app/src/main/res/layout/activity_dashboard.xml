@@ -30,6 +30,7 @@
             <ImageView
                 android:layout_width="12dp"
                 android:layout_height="12dp"
+                android:id="@+id/map_location"
                 android:src="@drawable/location_icon"
                 android:layout_toEndOf="@+id/tv_location"
                 android:layout_marginTop="18dp"

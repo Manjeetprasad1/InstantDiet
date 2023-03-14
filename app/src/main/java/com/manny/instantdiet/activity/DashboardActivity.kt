@@ -41,6 +41,10 @@ class DashboardActivity : BaseActivity() {
             val intent = Intent(this@DashboardActivity,ProfileActivity::class.java)
             startActivity(intent)
         }
+        binding.mapLocation.setOnClickListener {
+            val intent = Intent (this,LocationMapActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setProductAdapter() {

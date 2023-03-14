@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manny.instantdiet.viewModel.DashboardViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vector_3"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:weightSum="2"
+                android:orientation="vertical"
+                >
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:background="@drawable/location_bg"
+                  >
+
+                  <de.hdodenhof.circleimageview.CircleImageView
+                      android:id="@+id/delivery_boy_profile"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/ellipse_27"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:layout_marginTop="18dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      android:layout_marginBottom="19dp"
+                      android:layout_marginStart="18dp"
+
+
+                      />
+                  <androidx.appcompat.widget.AppCompatTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      app:layout_constraintStart_toEndOf="@id/delivery_boy_profile"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:text="Prince Mishra"
+                      android:textSize="20sp"
+                      android:id="@+id/delivery_boy_name"
+                      android:textColor="@color/white"
+                      android:layout_marginTop="31dp"
+                      android:layout_marginStart="9dp"
+
+
+                      />
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="9dp"
+                      android:layout_marginTop="2dp"
+                      app:layout_constraintTop_toBottomOf="@id/delivery_boy_name"
+                      app:layout_constraintStart_toEndOf="@id/delivery_boy_profile"
+                      android:weightSum="5"
+                      >
+
+                      <androidx.appcompat.widget.AppCompatImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/star_1"
+                          android:layout_weight="1"
+                          />
+                      <androidx.appcompat.widget.AppCompatImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/star_1"
+                          android:layout_weight="1"
+                          />
+                      <androidx.appcompat.widget.AppCompatImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/star_1"
+                          android:layout_weight="1"
+                          />
+                      <androidx.appcompat.widget.AppCompatImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/star_1"
+                          android:layout_weight="1"
+                          />
+
+                      <androidx.appcompat.widget.AppCompatImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/star_1"
+                          android:layout_weight="1"
+                          />
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+                  <de.hdodenhof.circleimageview.CircleImageView
+                      android:layout_width="36dp"
+                      android:layout_height="36dp"
+                      android:id="@+id/call_icon"
+                      app:layout_constraintStart_toEndOf="@id/delivery_boy_name"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:layout_marginTop="34dp"
+                      android:src="@drawable/phone"
+                      app:layout_constraintEnd_toStartOf="@id/msg_icon"
+                      android:padding="3dp"
+                      android:background="@drawable/ellipse_32"
+                      android:backgroundTint="@color/white"
+                      />
+                  <de.hdodenhof.circleimageview.CircleImageView
+                      android:layout_width="36dp"
+                      android:layout_height="36dp"
+                      android:id="@+id/msg_icon"
+                      app:layout_constraintStart_toEndOf="@id/call_icon"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:layout_marginTop="34dp"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:layout_marginEnd="16dp"
+                      android:src="@drawable/vector__2_"
+                      android:padding="3dp"
+                      android:background="@drawable/ellipse_32"
+                      android:backgroundTint="@color/white"
+                      />
+
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               >
+
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>
