@@ -15,6 +15,9 @@
         android:theme="@style/Theme.InstantDiet"
         tools:targetApi="31">
         <activity
+            android:name=".activity.DeliveryArrivedActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.LocationMapActivity"
             android:exported="false" />
         <!--
